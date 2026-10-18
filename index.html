@@ -1,44 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Real Web</title>
-<style>
-  body {
-    margin: 0;
-    min-height: 100dvh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-
-    background-image: url('bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #1a1a1a; /* 图片加载失败时的兜底 */
-
-    font-family: system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
-  }
-  .box {
-    background: rgba(0, 0, 0, 0.7);
-    color: #d8d2d2;
-    padding: 40px;
-    border-radius: 15px;
-    text-align: center;
-    max-width: 500px;
-    width: 100%;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, .4);
-    backdrop-filter: blur(4px);
-  }
-  .box h1 { margin-top: 0; font-size: clamp(1.4rem, 4vw, 2rem); }
-  .box p  { line-height: 1.6; margin-bottom: 0; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Real Web</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="box">
+    <!-- 导航栏 -->
+    <div class="nav">
+      <a href="index.html" class="active">首页</a>
+      <a href="about.html">关于我</a>
+    </div>
+
     <h1>我的电脑编辑的！</h1>
     <p>这个网页和图片是从我的 Windows 电脑传上来的。</p>
   </div>
